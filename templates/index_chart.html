@@ -1,9 +1,13 @@
 <html>
   <head>
     <title>Trends</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   </head>
   <body>
     <h1>Trends</h1>
-    {{ chart_html | safe }}
+    <div id="chart"></div>
+    <script>
+      Plotly.plot("chart", {{ chart|tojson }});
+    </script>
   </body>
 </html>
