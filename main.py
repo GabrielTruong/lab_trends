@@ -1,4 +1,3 @@
-import plotly.graph_objects as go
 from flask import Flask, render_template
 from pytrends.request import TrendReq
 
